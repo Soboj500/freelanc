@@ -1,14 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e2e2e2;
+}
+
+body::-webkit-scrollbar-track
+{
+  background-color: transparent;
+  display: none;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background: transparent;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background-color: #52a8ce;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App-header {
+  max-height: 10vh;
+  min-height: 10vh !important;
+  box-shadow: 0px 2px 10px 0px #282c34;
+  position: relative;
+  z-index: 2;
+}
+
+.App-footer {
+  height: 20vh;
+  background-color: #282c34;
+}
+
+#App-main {
+  background-color: #f0f0f0;
+  height: 90vh;
+  background-image: url('bckg3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 5px 20px 10px #e2e2e2;
+  z-index: 1;
+  position: relative;
+}
+  .scroll-down {
+    bottom: 5vh;
+    position: relative;
+    /*background-color: rgba(23, 72, 109, 0.7);*/
+    padding: 50px 20px 15px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(40, 44, 52, .5);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  }
+  .scroll-down:active {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  }
+    .scroll-down-background {
+      position: absolute;
+      bottom: 5vh;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+  .scroll-down-about {
+    height: auto;
+    width: 3em !important;
+    color: black;
+  }
+    /*.scroll-down-about:hover {
+      animation: fadeIn .5s ease-in both;
+    }*/
+  .App-main-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);   
+  }
+    .App-main-img {
+      width: 30vh;
+      transition: all .1s ease-in-out;
+    }
+    .App-main-img:hover {
+      transform: scale(1.01); 
+    }
+
+  .container {
+    padding: 50px;
+  }
+  
+  .projects {
+    letter-spacing: 15px;
+    height: 100%;
+  }
+      .projects .portfolio {
+        margin: auto;
+        width: 97%;
+        margin-top: 50px;
+      }
+      .projects .portfolio .portfolio-1 {
+        background-color: #fff;
+        background-image: url('./obytna.jpeg');
+        background-size: cover;
+        width: 350px;
+        height: 550px;
+        float: left;
+        position: relative;
+      }
+      .projects .portfolio .portfolio-2 {
+        background-color: #fff;
+        width: 350px;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+      }
+      .projects .portfolio .portfolio-3 {
+        background-color: #fff;
+        width: 350px;
+        height: 450px;
+        margin: 10px;
+      }
+      .projects .portfolio .portfolio-2-3 {
+        float: left;
+      }
+      .projects .portfolio .portfolio-4 {
+        background-color: #fff;
+        width: 350px;
+        height: 550px;
+        float: left;
+      }
+      .portfolio-overlay {
+        border: 1px solid rgb(182, 182, 182);
+        transition: .3s ease-in-out;
+      }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      width: 100%;
+      opacity: 0;
+      transition: .2s ease;
+      background-color: #e2e2e2;
+    }
+      .overlay .text {
+        letter-spacing: normal;
+        font-size: 1.1em;
+        padding: 30px;
+        font-weight: 500;
+      }
+      .portfolio-overlay:hover .overlay {
+        opacity: 1;
+        animation: fadeBot .5s ease-in both;
+      }
+      .portfolio-overlay:hover {
+        box-shadow: 0px 2px 10px 0px #282c34;
+      }
+
+.nav-link {
+  font-size: .6em !important;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+  .nav-link:hover {
+    color: #e17fb0 !important;
+  }
+.navbar-brand {
+  font-size: 1.4em !important;
+  padding: 50px;
+}
+  .navbar-brand:hover {
+    transform: scale(1.01); 
+  }
+.navbar a {
+  color: inherit !important;
+  letter-spacing: .6vh;
+}
+.navbar {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lessAbout {
+  padding: 20px;
+}
+
+.text img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+  .text .html5 {
+    fill: rgb(241, 101, 41);
+  }
+
+
+
+#App-content {
+  height: 100vh;
+  background-color: #e2e2e2;
+  background-image: url('wallpaper2.png');
+  position: relative;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -50%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes fadeBot {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 150%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
