@@ -220,7 +220,9 @@ code {
 #App-content {
   height: 100vh;
   background-color: #e2e2e2;
-  background-image: url('wallpaper2.png');
+  background-image: url('wallpaper3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 

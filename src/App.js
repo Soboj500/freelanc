@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.png';
-import obytna from './obytna.jpeg';
 import './App.css';
-import background from './bckg.jpg';
 import downArrow from './down-arrow.png';
 import phpIcon from "./php-brands.svg";
 import html5 from "./html5-brands.svg"
